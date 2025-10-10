@@ -1,14 +1,15 @@
 public class Customer {
-    private String customer_id, name, phone;
+    private String customer_id, name, phone, email;
 
     public Customer() {
 
     }
 
-    public Customer(String customer_id, String name, String phone) {
+    public Customer(String customer_id, String name, String phone, String email) {
         this.customer_id = customer_id;
         this.name = name;
         this.phone = phone;
+        this.email = email;
     }
 
     public String getCustomerId() {
@@ -33,5 +34,13 @@ public class Customer {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
